@@ -23,50 +23,73 @@
                 </div>
     	</header>
       
-      <main>
-	   <form>
-		   <label for="nomeesobrenome">Nome e sobrenome</label>
-		   <input type="text" id="nomeesobrenome" class="input-padrao">
-		   
-		   <label for="email">Email</label>
-		   <input type="text" id="email">
-		   
-		   <label for="telefone">Telefone</label>
-		   <input type="text" id="telefone" class="input-padrao">
-		   
-		   <label for="mensagem">Mensagem</label>
-		   <textarea cols="70" rown="10" id="mensagem" class="input-padrao"></textarea>
-		   
-	<div>
-	    <p>Como prefere o nosso contato?</p>
-			  
-	    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" class="input-padrao">Email</label>
+     <main>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" required class="input-padrao">
 
-	    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" class="input-padrao"> Telefone</label>
+                <label for="email">E-mail</label>
+                <input type="email" id="email"required placeholder="seuemail@dominio.com" class="input-padrao">
 
-	    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" class="input-padrao">WhatsApp</label>
-	   
-	</div>
-		   
-        <div>
-	    <p>Qual horário prefere ser atendido?</p>
-	    <select>
-		<option>Manhã</option>
-		<option>Tarde</option>
-		<option>Noite</option>
-	    </select>
-	</div>
-		   
-	<label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
-	    
-		   
-		   <input type="submit" value"Enviar formulário">
-           </form>
-      </main>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX" class="input-padrao">
 
-      <footer>
-    		<img id="logo-branco" src="logo-branco.png (1).png">
-    		<p class="copyright">&copy; Copyright Padaria Le Rocha- 1998
-    	</footer>
-    </body>
-<html>
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+				<fieldset class="formularios">
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" class="formulario">Email</label>
+				
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" class="formulario"> Telefone</label>
+				
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked class="formulario">WhatsApp</label>
+									
+				</fieldset>
+
+				<fieldset class="formularios">
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox">
+					<input type="checkbox" checked>
+					Gostaria de receber nossas novidades por email?
+				</label>
+
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
+        </main>        
+        <footer>
+			<img src="logo-branco.jpg" src="logo-branco.png(1)">
+			<p class="copyright">&copy; Padaria Le Rocha - 1998</p>
+		</footer>
+	</body>
+</html>
